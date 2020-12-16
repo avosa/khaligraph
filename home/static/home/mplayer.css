@@ -3,15 +3,40 @@
 	bottom: 5%;
 	left: 50%;
 	transform: translate(-50%, 0);
-	-webkit-transform: translate(-30%, -0);
+	-webkit-transform: translate(-50%, -0);
 	-moz-transform: translate(-50%, 0);
 	-o-transform: translate(-50%, -0);
 	-ms-transform: translate(-50%, -0);
 }
 
+@media only screen and (max-width: 768px) {
+	 For mobile phones:
+	.mplayer{
+		position: fixed;
+		bottom: 5%;
+		left: 50%;
+		width: auto;
+	}
+	.mplayer-controls{
+		width: auto;
+		height: 100px;
+		background: white;
+		border-radius: 10px;
+
+		-webkit-box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85);
+		box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85);
+	}
+  }
+
+.mplayer{
+    display: flex;
+  justify-content: center;
+  width: 405px;
+}
+
 .mplayer-details{
 	position: absolute;
-	width: 90%;
+	width: 30%;
 	left: 30px;
 	top: -60%;
 }
@@ -22,8 +47,8 @@
 }
 
 .mplayer-cover img{
-	width: 120px;
-	height: 120px;
+	width: 100px;
+	height: 100px;
 	box-sizing: border-box;
 	padding: 10px;
 
@@ -36,12 +61,13 @@
 
 .mplayer-title{
 	position: absolute;
-	left: 120px;
+	left: 100px;
 	top:5px;
-	margin-left: 40px;
+	margin-left: 38px;
 
 	color: rgb(114, 114, 114);
-	font-size: 30px;
+	font-size: 15px;
+	font-weight: bold;
 
 	width:270px;
 	height: 30px;
@@ -53,24 +79,24 @@
 .mplayer-artist{
 	position: absolute;
 	left: 120px;
-	margin-left: 45px;
+	margin-left: 13px;
 	top: 40px;
 
-	font-size: 15px;
+	font-size: 13px;
 	color:rgb(114, 114, 114);
 
-	width:200px;
-	height: 30px;
+	width:130px;
+	height: 23px;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
 
 .mplayer-controls{
-	width: 600px;
+	width: 570px;
 	height: 100px;
 	background: white;
-	border-radius: 10px;
+	border-radius: 6px;
 
 	-webkit-box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85);
 	box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85);
@@ -84,7 +110,7 @@
 }
 
 .mplayer-buttons div{
-	margin: 0 3px;
+	margin: 0 2px;
 }
 
 .mplayer-buttons div:hover{
@@ -92,7 +118,7 @@
 }
 
 .mplayer-buttons div i{
-	font-size: 20px;
+	font-size: 12px;
 	text-shadow: 5px 5px 10px #ACACAC;
 	color: #2A2A2A;
 }
@@ -105,7 +131,7 @@
 	position: absolute;
 	bottom: 15px;
 
-	width: 90%;
+	width: 80%;
 	left: 50%;
 
 	transform: translate(-50%, 0);
