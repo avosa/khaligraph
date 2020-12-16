@@ -25,22 +25,30 @@
 	left: 50%;
 }
 
+.design {
+    color: #fff;
+}
+#design{
+  color: pink;
+  font-weigh: bold;
+}
+
 @media screen and (max-width: 600px) {
 	.contact-box{
 		width: 100vw;
 		margin: 10px;
 	}
-	
+
 	.contact-left{
 		position: relative;
 	}
-	
+
 	.contact-right{
 		position: relative;
 		left: 0%;
 	}
-	
-	
+
+
 }
 
 .fa{
